@@ -1,0 +1,39 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "A program to write fizzbuzz based on the multiple of a chosen number.",
+  "main": "fizzBuzz.js",
+  "scripts": {
+    "test": "jest --watch --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlama7/fizzBuzz.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "ES6",
+    "Jest",
+    "Unit",
+    "Tests",
+    "Algorithms",
+    "Datastructures",
+    "System",
+    "Design",
+    "Interview",
+    "Questions",
+    "Technical",
+    "Interview",
+    "JavaScript",
+    "Tutorial"
+  ],
+  "author": "Ratna Lama",
+  "license": "MIT ",
+  "bugs": {
+    "url": "https://github.com/rlama7/fizzBuzz/issues"
+  },
+  "homepage": "https://github.com/rlama7/fizzBuzz#readme",
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
+}
