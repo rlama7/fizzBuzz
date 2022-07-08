@@ -1,9 +1,9 @@
-const fizzBuzzIterative = (a, b) => {
-  return a + b;
+const fizzBuzzIterative = (number) => {
+  return number;
 };
 
-const fizzBuzzRecursive = (a, b) => {
-  return a - b;
+const fizzBuzzRecursive = (number) => {
+  return number;
 };
 
 module.exports = { fizzBuzzIterative, fizzBuzzRecursive };
