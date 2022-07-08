@@ -1,36 +1,40 @@
-const fizzBuzzIterative = (number) => {
-  if (number < 1 || undefined || null) {
-    return `Sorry we do not support ${number}. Please try a positive number greater than 0.`;
-  } else if (number % 3 === 0 && number % 5 === 0) {
+const fizzBuzzIterative = (num) => {
+  // constraints/edge cases
+  if (typeof num !== 'number' || num < 1) {
+    // if (number < 1 || undefined || null)
+    return `Sorry we do not support ${num}. Please try a positive integer number greater than 0.`;
+  } else if (num % 3 === 0 && num % 5 === 0) {
     return 'fizzbuzz';
-  } else if (number % 3 === 0) {
+  } else if (num % 3 === 0) {
     return 'fizz';
-  } else if (number % 5 === 0) {
+  } else if (num % 5 === 0) {
     return 'buzz';
   } else {
-    return number;
+    return num;
   }
 };
 
-const fizzBuzzRecursive = (number) => {
-  // base case
-  if (number < 1 || undefined || null) {
-    return `Sorry we do not support ${number}. Please try a positive number greater than 0.`;
-  } else {
-    if (number % 3 === 0 && number % 5 === 0) {
+const fizzBuzzRecursive = (num) => {
+  if (typeof num !== 'number' || num < 1) {
+    return `Sorry we do not support ${num}. Please try a positive integer number greater than 0.`;
+  }
+  // base case + edge cases
+  //   if (num < 1 || undefined || null) {
+  //     return `Sorry we do not support ${num}. Please try a positive integer number greater than 0.`;
+  else {
+    if (num % 3 === 0 && num % 5 === 0) {
       return 'fizzbuzz';
-    } else if (number % 3 === 0) {
+    } else if (num % 3 === 0) {
       return 'fizz';
-    } else if (number % 5 === 0) {
+    } else if (num % 5 === 0) {
       return 'buzz';
     } else {
-      return number;
+      return num;
     }
   }
-  return fizzBuzzRecursive(number - 1);
+  fizzBuzzRecursive(num + 1);
 };
 
-//
-console.log(fizzBuzzRecursive(30));
+// console.log(fizzBuzzRecursive('Hello'));
 
 module.exports = { fizzBuzzIterative, fizzBuzzRecursive };
