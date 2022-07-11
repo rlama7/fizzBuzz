@@ -14,10 +14,6 @@ const fizzBuzzRecursiveCases = [
     'Sorry we do not support null. Please try a positive integer number greater than 0.',
   ],
   [
-    -301,
-    'Sorry we do not support -301. Please try a positive integer number greater than 0.',
-  ],
-  [
     -30,
     'Sorry we do not support -30. Please try a positive integer number greater than 0.',
   ],
@@ -44,8 +40,11 @@ const fizzBuzzRecursiveCases = [
 
 // fizzBuzz Iterative Version Test
 describe('\nfizzBuzzIterative Test', () => {
-  it('fizzBuzzIterative() function should exists', () => {
+  it('fizzBuzzIterative() function exists', () => {
     expect(typeof fizzBuzzIterative).toBe('function');
+  });
+  it('fizzBuzzIterative() expects exactly 1 argument', () => {
+    expect(fizzBuzzIterative.length).toBe(1);
   });
   it('1 should log 1', () => {
     expect(fizzBuzzIterative(1)).toBe(1);
@@ -68,7 +67,7 @@ describe('\nfizzBuzzIterative Test', () => {
   it('30 should NOT log  30', () => {
     expect(fizzBuzzIterative(30)).not.toBe(30);
   });
-  it('undefined should log undefined', () => {
+  it('undefined should log "Sorry we do not support undefined. Please try a positive integer number greater than 0"', () => {
     expect(fizzBuzzIterative(undefined)).toMatch(
       /Sorry we do not support undefined. Please try a positive integer number greater than 0./
     );
@@ -101,5 +100,8 @@ describe('\nfizzBuzzRecursive Test', () => {
   );
   it('fizzBuzzRecursive() function should exists', () => {
     expect(typeof fizzBuzzRecursive).toBe('function');
+  });
+  it('fizzBuzzRecursive() function expects exactly 1 argument', () => {
+    expect(fizzBuzzRecursive.length).toBe(1);
   });
 });

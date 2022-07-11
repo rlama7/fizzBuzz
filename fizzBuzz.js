@@ -1,5 +1,7 @@
 const fizzBuzzIterative = (num) => {
   // constraints/edge cases
+  // console.log(` arguments length is: ${arguments.length}`);
+  // console.log(` function length is: ${fizzBuzzIterative.length}`);
   if (typeof num !== 'number' || num < 1) {
     // if (number < 1 || undefined || null)
     return `Sorry we do not support ${num}. Please try a positive integer number greater than 0.`;
@@ -13,6 +15,8 @@ const fizzBuzzIterative = (num) => {
     return num;
   }
 };
+
+// console.log(fizzBuzzIterative(undefined));
 
 const fizzBuzzRecursive = (num) => {
   if (typeof num !== 'number' || num < 1) {
