@@ -3,23 +3,27 @@ const { fizzBuzzIterative, fizzBuzzRecursive } = require('../fizzBuzz');
 const fizzBuzzRecursiveCases = [
   [
     'Hello',
-    'Sorry we do not support Hello. Please try a positive integer number greater than 0.',
+    'Sorry Hello is not supported. Please try a positive integer number greater than 0.',
   ],
   [
     undefined,
-    'Sorry we do not support undefined. Please try a positive integer number greater than 0.',
+    'Sorry undefined is not supported. Please try a positive integer number greater than 0.',
   ],
   [
     null,
-    'Sorry we do not support null. Please try a positive integer number greater than 0.',
+    'Sorry null is not supported. Please try a positive integer number greater than 0.',
   ],
   [
     -30,
-    'Sorry we do not support -30. Please try a positive integer number greater than 0.',
+    'Sorry -30 is not supported. Please try a positive integer number greater than 0.',
   ],
   [
     0,
-    'Sorry we do not support 0. Please try a positive integer number greater than 0.',
+    'Sorry 0 is not supported. Please try a positive integer number greater than 0.',
+  ],
+  [
+    '1',
+    'Sorry 1 is not supported. Please try a positive integer number greater than 0.',
   ],
   [1, 1],
   [2, 2],
@@ -67,24 +71,24 @@ describe('\nfizzBuzzIterative Test', () => {
   it('30 should NOT log  30', () => {
     expect(fizzBuzzIterative(30)).not.toBe(30);
   });
-  it('undefined should log "Sorry we do not support undefined. Please try a positive integer number greater than 0"', () => {
+  it('undefined should log "Sorry undefined is not supported. Please try a positive integer number greater than 0"', () => {
     expect(fizzBuzzIterative(undefined)).toMatch(
-      /Sorry we do not support undefined. Please try a positive integer number greater than 0./
+      /Sorry undefined is not supported. Please try a positive integer number greater than 0./
     );
   });
-  it('null should log "Sorry we do not support null. Please try a positive integer number greater than 0."', () => {
+  it('null should log "Sorry null is not supported. Please try a positive integer number greater than 0."', () => {
     expect(fizzBuzzIterative(null)).toMatch(
-      /Sorry we do not support null. Please try a positive integer number greater than 0./
+      /Sorry null is not supported. Please try a positive integer number greater than 0./
     );
   });
-  it('0 should log "Sorry we do not support 0. Please try a positive integer number greater than 0."', () => {
+  it('0 should log "Sorry 0 is not supported. Please try a positive integer number greater than 0."', () => {
     expect(fizzBuzzIterative(0)).toMatch(
-      /Sorry we do not support 0. Please try a positive integer number greater than 0./
+      /Sorry 0 is not supported. Please try a positive integer number greater than 0./
     );
   });
-  it('-30 should log "Sorry we do not support -30. Please try a positive integer number greater than 0."', () => {
+  it('-30 should log "Sorry -30 is not supported. Please try a positive integer number greater than 0."', () => {
     expect(fizzBuzzIterative(-30)).toMatch(
-      /Sorry we do not support -30. Please try a positive integer number greater than 0./
+      /Sorry -30 is not supported. Please try a positive integer number greater than 0./
     );
   });
 });
@@ -103,5 +107,8 @@ describe('\nfizzBuzzRecursive Test', () => {
   });
   it('fizzBuzzRecursive() function expects exactly 1 argument', () => {
     expect(fizzBuzzRecursive.length).toBe(1);
+  });
+  it('fractional input should expect a failed message', () => {
+    expect(fizzBuzzRecursive).not.toBe(3.15);
   });
 });
