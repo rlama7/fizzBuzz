@@ -12,15 +12,28 @@
  * @returns either positive integer || 'fizz' || 'buzz' || 'fizzbuzz'
  *
  * Input:
+ * 		fizzBuzz(n) where n = 1
+ * 		fizzBuzz(n) where n = 6
+ * 		fizzBuzz(n) where n = 10
  * 		fizzBuzz(n) where n = 15
+ *
  * Output:
+ *    fizzBuzz(n) where n = 1 --> prints 1
+ * 		fizzBuzz(n) where n = 6 --> prints 'fizz'
+ * 		fizzBuzz(n) where n = 10 --> prints 'buzz'
+ * 		fizzBuzz(n) where n = 15 --> prints 'fizzbuzz'
+ *
+ *    for n = 1 to 15 --> prints following:
  * 		1, 2, (fizz), 4, (buzz), (fizz), 7, 8, (fizz), (buzz), 11, (fizz), 13, 14, fizzbuzz
+ *
  * Constraints/Edge Case:
  * 		What should the output be if input
- * 		n = 0 ? || n = -15 || n = 3.75 || n = null || n == undefined || n = string
+ * 		n = 0 ? || n = -15 || n = 3.75 || n = null || n == undefined || n = string || n = 3.15 (fractional)
  * 		Should we only consider positive integer numbers (n > 0) for this demonstration?
+ *
  * Assumptions if any:
  * 		Test
+ *
  * Algorithm:
  * 		 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
  *           ^     ^^ ^        ^  ^^       ^          ^^^
@@ -67,8 +80,8 @@
  */
 
 const fizzBuzzIterative = (num) => {
-  if (typeof num !== 'number' || num < 1) {
-    return `Sorry we do not support ${num}. Please try a positive integer number greater than 0.`;
+  if (typeof num !== 'number' || num < 1 || !Number.isInteger(num)) {
+    return `Sorry ${num} is not supported. Please try a positive integer number greater than 0.`;
   } else if (num % 3 === 0 && num % 5 === 0) {
     return 'fizzbuzz';
   } else if (num % 3 === 0) {
@@ -80,9 +93,11 @@ const fizzBuzzIterative = (num) => {
   }
 };
 
+console.log(fizzBuzzIterative(-1));
+
 const fizzBuzzRecursive = (num) => {
   if (typeof num !== 'number' || num < 1) {
-    return `Sorry we do not support ${num}. Please try a positive integer number greater than 0.`;
+    return `Sorry ${num} is not supported. Please try a positive integer number greater than 0.`;
   } else {
     if (num % 3 === 0 && num % 5 === 0) {
       return 'fizzbuzz';
