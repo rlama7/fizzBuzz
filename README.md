@@ -86,7 +86,7 @@ Assumptions
     - 15x2 = 30
     - 15x3 = 45 ...
 
-    For any other positive numbers just print the same number that are neither multiples of 3 or 5 or both 3 & 5 --> print the same number
+    For any other positive numbers just print the same number.
 
     Given a number say 3, we can multiply 3 with any positive integers to get a product.
 
@@ -95,7 +95,10 @@ Assumptions
     - So the real point here is how we know that given a number, it is multiple of 3 or 5 or both?
     - Once we know that we are golden.
 
-    - This is where we might have to flip a logic bit. To get a multiple we multiplied. But to know that any given number is a multiple of 3 we simply need to divide it by 3 and if the remainder is 0 then we know it is a multiple.
+    - This is where we might have to flip a logic bit.
+    - To get a multiple we multiplied.
+    - But to know that any given number is a multiple of 3 we simply need to divide it by 3
+    - and if the remainder is 0 then we know it is a multiple.
 
     - This is also where your knowledge of JavaScript operators comes handy.
     - Divison operator ( / ) yields what the quotient is,
@@ -111,11 +114,12 @@ Assumptions
     - 15 % 3 --> 3 divides 15 into 5 equal parts leaving remainder 0, also
     - 15 % 5 --> 5 divides 15 into 3 equal parts leaving remainder 0, therefore 15 is a multiple of both 3 && 5.
 
-    ## In summary,
+    In summary,
 
     - Divide any given number by 3. If the remainder is 0 then it is a multiple of 3 therefore print 'fizz'.
     - Divide any given number by 5. If the remainder is 0 then it is a multiple of 5 therfore print 'buzz'.
-    - Divide any given number by both 3 && 5. If the remainder is 0 then it is a multiple of both 3 && 5 therefore print 'fizzbuzz'.
+    - Divide any given number by both 3 && 5.
+    - If the remainder is 0 then it is a multiple of both 3 && 5 therefore print 'fizzbuzz'.
     - For all other cases print the number
     - For constraints, edge cases print the message.
 
@@ -129,32 +133,40 @@ Assumptions
 # Unit Tests
 
     1. Consider all the following cases:
-    	- Constraints
-    	- Edge cases
-    	- Regular test cases
+
+    - Constraints
+    - Edge cases
+    - Regular test cases
 
     2. To run test cases from this repo:
-    	- clone the repo
-    	- then cd to the `fizzBuzz` folder
-    	- install the dependencies `npm install`
-    	- Next, in your terminal window enter following to run all the unit tests.
-    	- `npm test`
-    	- assumes you've `Node` && `Jest` installed in your machine.
+
+    - Clone the repo then install dependencies and run the unit tests. Assumes you've Node && Jest installed in your machine.
+
+```
+git clone git@github.com:rlama7/fizzBuzz.git
+
+cd fizzBuzz
+
+npm install
+
+npm test
+```
 
 # Technologies
 
-1. [GitHub](https://github.com/rlama7)
-2. [Linkedin]()
-3. [VS Code]()
-4. [Node]()
-5. [NPM Packages]()
+1. [GitHub FizzBuzz Repo](https://github.com/rlama7/fizzBuzz)
+2. [Edit FizzBuzz with VS Code Online Editor](https://github1s.com/rlama7/fizzBuzz)
+3. [Connect with me on Linkedin](https://www.linkedin.com/in/ratna-lama/)
+4. [Install Node JS](https://nodejs.org/en/)
+5. [Jest for Unit Testing](https://jestjs.io/docs/getting-started)
 
 # References
 
-1. [isInteger](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger)
-2. [JavaScript Arithmetic Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#arithmetic_operators)
+1. [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+2. [isInteger](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger)
+3. [JavaScript Arithmetic Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#arithmetic_operators)
 
-# Kewords
+# Keywords
 
 JavaScript,
 ES6,

@@ -93,8 +93,6 @@ const fizzBuzzIterative = (num) => {
   }
 };
 
-console.log(fizzBuzzIterative(-1));
-
 const fizzBuzzRecursive = (num) => {
   if (typeof num !== 'number' || num < 1) {
     return `Sorry ${num} is not supported. Please try a positive integer number greater than 0.`;
