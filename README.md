@@ -2,6 +2,8 @@
 
 A program to write 'fizz' or 'buzz' or 'fizzbuzz' based on the multiple of a chosen number.
 
+:bulb: FizzBuzz step by step youtube instructions :point_right: [Youtube](https://www.youtube.com/c/Freecodecamp)
+
     if the number is a multiple of 3 print 'fizz'
     if the number is a multiple of 5 print 'buzz'
     if the number is a multiple of both 3 && 5 print 'fizzbuzz'
@@ -167,8 +169,9 @@ npm test
 
 # Social Network
 
-1. [GitHub FizzBuzz Repo](https://github.com/rlama7/fizzBuzz)
-2. [Connect with me on Linkedin](https://www.linkedin.com/in/ratna-lama/)
+1. [Youtube]()
+2. [GitHub FizzBuzz Repo](https://github.com/rlama7/fizzBuzz)
+3. [Connect with me on Linkedin](https://www.linkedin.com/in/ratna-lama/)
 
 # Keywords
 
