@@ -2,7 +2,7 @@
 
 A program to write 'fizz' or 'buzz' or 'fizzbuzz' based on the multiple of a chosen number.
 
-:bulb: FizzBuzz step by step youtube instructions :point_right: [Youtube](https://www.youtube.com/c/Freecodecamp)
+:bulb: FizzBuzz step by step instructions on [Youtube](https://www.youtube.com/c/Freecodecamp).
 
     if the number is a multiple of 3 print 'fizz'
     if the number is a multiple of 5 print 'buzz'
