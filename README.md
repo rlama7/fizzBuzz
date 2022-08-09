@@ -14,9 +14,6 @@ A program to write 'fizz' or 'buzz' or 'fizzbuzz' based on the multiple of a cho
 1. [Input](#input)
 2. [Output](#output)
 3. [Clarifications](#clarifications)
-   - Constraints
-   - Edge Cases
-   - Assumptions
 4. [Algorithm](#algorithm)
 5. [Time Space Complexity](#time-space-complexity)
 6. [Unit Tests](#unit-tests)
