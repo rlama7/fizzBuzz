@@ -1,6 +1,6 @@
-const { fizzBuzzIterative, fizzBuzzRecursive } = require('../fizzBuzz');
+const fizzBuzzIterative = require('../fizzBuzz');
 
-const fizzBuzzRecursiveCases = [
+const fizzBuzzIterativeCases = [
   [
     'Hello',
     'Sorry Hello is not supported. Please try a positive integer number greater than 0.',
@@ -93,22 +93,22 @@ describe('\nfizzBuzzIterative Test', () => {
   });
 });
 
-// fizzBuzz Recursive Version Test
-describe('\nfizzBuzzRecursive Test', () => {
-  test.each(fizzBuzzRecursiveCases)(
+// fizzBuzz Parameteric Version Test
+describe('\n fizzBuzzIterativeParametric Test', () => {
+  test.each(fizzBuzzIterativeCases)(
     'given %p as argument returns %p',
     (firstArg, expectedResult) => {
-      const actual = fizzBuzzRecursive(firstArg);
+      const actual = fizzBuzzIterative(firstArg);
       expect(actual).toBe(expectedResult);
     }
   );
-  it('fizzBuzzRecursive() function should exists', () => {
-    expect(typeof fizzBuzzRecursive).toBe('function');
+  it('fizzBuzzIterative() function should exists', () => {
+    expect(typeof fizzBuzzIterative).toBe('function');
   });
-  it('fizzBuzzRecursive() function expects exactly 1 argument', () => {
-    expect(fizzBuzzRecursive.length).toBe(1);
+  it('fizzBuzzIterative() function expects exactly 1 argument', () => {
+    expect(fizzBuzzIterative.length).toBe(1);
   });
   it('fractional input should expect a failed message', () => {
-    expect(fizzBuzzRecursive).not.toBe(3.15);
+    expect(fizzBuzzIterative).not.toBe(3.15);
   });
 });

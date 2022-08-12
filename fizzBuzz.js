@@ -93,21 +93,4 @@ const fizzBuzzIterative = (num) => {
   }
 };
 
-const fizzBuzzRecursive = (num) => {
-  if (typeof num !== 'number' || num < 1) {
-    return `Sorry ${num} is not supported. Please try a positive integer number greater than 0.`;
-  } else {
-    if (num % 3 === 0 && num % 5 === 0) {
-      return 'fizzbuzz';
-    } else if (num % 3 === 0) {
-      return 'fizz';
-    } else if (num % 5 === 0) {
-      return 'buzz';
-    } else {
-      return num;
-    }
-  }
-  fizzBuzzRecursive(num + 1);
-};
-
-module.exports = { fizzBuzzIterative, fizzBuzzRecursive };
+module.exports = fizzBuzzIterative;
